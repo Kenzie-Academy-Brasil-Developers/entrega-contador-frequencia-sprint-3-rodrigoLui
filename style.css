@@ -1,0 +1,55 @@
+html,body,main,div,textarea,button,span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#corpo {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2688dd;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#centraliza {
+    width: 90%;
+    height: 100%;
+    background-color: #2688dd;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    #superior, #inferior {
+        width: 90%;
+        height: 45%;
+        max-width: 600px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        #txt { width: 100%; }
+        #countButton { height: 20%; width: 100%; }
+
+        #lettersDiv, #wordsDiv {
+            width: 100%;
+            height: 50%;
+            color: #f0f8ff;
+        }
+        #lettersDiv {
+            background-color: #3b5164;
+        }
+        #wordsDiv {
+            background-color: #254677;
+        }
+
+@media (min-width: 768px) {
+    #corpo { flex-direction: row; }
+    #superior, #inferior { width: 48%; max-width: 400px; }
+    #centraliza { max-width: 1000px; flex-direction: row; }
+}
